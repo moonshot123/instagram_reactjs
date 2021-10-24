@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <>
@@ -47,7 +47,7 @@ const Button = styled.button`
   border: none;
   padding: 10px;
   width: 260px;
-  background-color: #1bbc9b;
+  background-color: #004ea2;
 
   margin-bottom: 30px;
   color: white;

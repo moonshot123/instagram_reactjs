@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import PostItem from "../organism/PostItem";
 const Post = () => {
   return (
     <>
-      <PostDiv>포스트</PostDiv>
+      <PostDiv>
+        <PostItem />
+      </PostDiv>
     </>
   );
 };

@@ -4,21 +4,21 @@ import Main from "../component/page/Main";
 import Login from "../component/page/Login";
 import { React, useEffect, useState } from "react";
 
-const Router = () => {
-  const [visible, setvisible] = useState(false);
+const RouterPage = () => {
+  const [visible, setvisible] = useState(true);
+  console.log(useLocation);
+
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   console.log("====랜더링 확인====");
+  //   if (pathname) {
+  //     setvisible(!visible);
+  //   }
+  // }, [pathname]);
 
   return (
     <>
-      <div>
-        <button
-          onClick={() => {
-            setvisible(!visible);
-          }}
-        >
-          {visible ? "숨기기" : "보이기"}
-        </button>
-      </div>
-
       <BrowserRouter>
         {visible && <PageHeader />}
         <Switch>
@@ -34,4 +34,4 @@ const Router = () => {
   );
 };
 
-export default Router;
+export default RouterPage;

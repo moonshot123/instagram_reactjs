@@ -1,8 +1,8 @@
-import Router from "./router/Router.js";
+import RouterPage from "./router/RouterPage.js";
 function App() {
   return (
     <>
-      <Router />
+      <RouterPage />
     </>
   );
 }
