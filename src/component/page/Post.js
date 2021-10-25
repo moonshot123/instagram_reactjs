@@ -12,7 +12,7 @@ const Post = () => {
 
 const PostDiv = styled.div`
   background-color: white;
-  height: 400px;
+  height: 700px;
   width: 100%;
   border: 1px solid #d3d3d3;
   margin-top: 30px;
