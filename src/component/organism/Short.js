@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { shortsList } from "../../api/ShortList.js";
 const Shorts = () => {
-  //const [shorts, setShorts] = useState([shortsList]);
+  const [shorts, setShorts] = useState([]);
 
   console.log("shorts List 로그입니다. :" + shortsList);
   //console.log("shorts  로그입니다. :" + shorts);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setShorts(shortsList);
+  }, []);
 
   return (
     <>
